@@ -16,11 +16,9 @@ export function AuthModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button>
-          Try for Free
-        </Button>
+        <Button>Try for Free</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[400px] rounded-2xl bg-white shadow-xl p-6">
+      <DialogContent className="sm:max-w-[400px] rounded-2xl bg-white dark:bg-neutral-900 shadow-xl p-6">
         <DialogHeader className="flex flex-row items-center justify-center gap-4 text-center">
           <Image src={Logo} className="size-10" alt="Logo" />
           <h4 className="text-3xl font-semibold">
@@ -28,7 +26,7 @@ export function AuthModal() {
           </h4>
         </DialogHeader>
         <div className="flex justify-center w-full mt-2">
-          <p className="text-muted-foreground text-sm">
+          <p className="text-muted-foreground dark:text-neutral-400 text-sm">
             Your quick and easy meeting scheduler
           </p>
         </div>
@@ -53,7 +51,7 @@ export function AuthModal() {
             <GitHubAuthButton />
           </form>
         </div>
-        <div className="mt-5 text-center text-sm text-muted-foreground">
+        <div className="mt-5 text-center text-sm text-muted-foreground dark:text-neutral-400">
           <p>
             By signing in, you agree to our{" "}
             <span className="text-primary cursor-pointer">Terms of Service</span>{" "}
