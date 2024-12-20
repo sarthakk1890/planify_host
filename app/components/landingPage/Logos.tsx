@@ -13,7 +13,9 @@ export function Logos() {
   return (
     <div className="py-10">
       <h2 className="text-center text-lg font-semibold leading-7 mb-8">
-        Trusted by the best companies in the world
+        Trusted by the best companies in the world*
+        <br />
+        <p className="text-xs italic">(The companies listed are for illustrative purposes only and do not represent real endorsements.)</p>
       </h2>
       <Marquee speed={100} gradient={false}>
         {[
